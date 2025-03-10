@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='stylesheet' type='text/css' media='screen' href="../estilos/estiloflexbox2.css">
+  <title>FLEXBOX</title>
+</head>
+
+<body>
+  <header class="navbar">
+    <h1>FLEXBOX
+      <svg width="50" height="50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="3" y="3" width="18" height="18" rx="2" stroke="white" stroke-width="2" />
+        <line x1="3" y1="8" x2="21" y2="8" stroke="white" stroke-width="2" />
+        <line x1="3" y1="14" x2="21" y2="14" stroke="white" stroke-width="2" />
+        <line x1="8" y1="3" x2="8" y2="21" stroke="white" stroke-width="2" />
+        <line x1="16" y1="3" x2="16" y2="21" stroke="white" stroke-width="2" />
+      </svg>
+    </h1>
+    <nav>
+      <a href="indice.html" target="_self"
+        style="box-shadow: 3px 3px 3px #1e3b59 (128, 128, 128, 0.512); border-radius: 8px;color: white">INICIO</a>
+      <a href="HTMLRESUMEN.html" target="_self"
+        style="box-shadow: 3px 3px 3px #1e3b59(128, 128, 128, 0.512); border-radius: 8px;color: white">RESUMEN</a>
+      <a href="colores.html" target="_self"
+        style="box-shadow: 3px 3px 3px #1e3b59 (128, 128, 128, 0.512); border-radius: 8px;color: white">COLORES</a>
+      <a href="lenguajes.html" target="_self"
+        style="box-shadow: 3px 3px 3px #1e3b59 (128, 128, 128, 0.512); border-radius: 8px;color: white">LENGUAJES</a>
+      <a href="listas.html" target="_self"
+        style="box-shadow: 3px 3px 3px #1e3b59 (128, 128, 128, 0.512); border-radius: 8px;color: white">LISTAS</a>
+      <a href="atajos.html" target="_self"
+        style="box-shadow: 3px 3px 3px #1e3b59 (128, 128, 128, 0.512); border-radius: 8px;color: white">ATAJOS DE
+        TECLADO</a>
+      <a href="pseudeo.html" target="_self"
+        style="box-shadow: 3px 3px 3px #1e3b59(128, 128, 128, 0.512); border-radius: 8px;color: white">PSEDEU</a>
+      <a href="imagenes.html" target="_self"
+        style="box-shadow: 3px 3px 3px #1e3b59(128, 128, 128, 0.512); border-radius: 8px; color: white;">IMAGENES</a>
+      <a href="tablas.html" target="_self"
+        style="box-shadow: 3px 3px 3px #1e3b59(128, 128, 128, 0.512); border-radius: 8px;">TABLAS</a>
+      <a href="mediqueries.html" target="_self"
+        style="box-shadow: 3px 3px 3px #1e3b59(128, 128, 128, 0.512); border-radius: 8px;">MEDIA QUERIES</a>
+    </nav>
+  </header>
+  <h2 style="text-align: center;">Ejemplo de Flexbox con Descripciones Detalladas</h2>
+  <div class="container">
+    <h3>1. Dirección de los elementos (flex-direction)</h3>
+    <p>
+      <strong>Descripción:</strong> Define la dirección en la que se colocan los elementos (fila o columna).
+    </p>
+    <div class="option-title">Opción: row (fila)</div>
+    <div class="flex-container" style="flex-direction: row;">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+    </div>
+    <div class="option-title">Opción: row-reverse (fila inversa)</div>
+    <div class="flex-container" style="flex-direction: row-reverse;">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+    </div>
+    <div class="option-title">Opción: column (columna)</div>
+    <div class="flex-container" style="flex-direction: column;">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+    </div>
+    <div class="option-title">Opción: column-reverse (columna inversa)</div>
+    <div class="flex-container" style="flex-direction: column-reverse;">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+    </div>
+  </div>
+
+  <!-- 2. Alineación horizontal (justify-content) -->
+  <div class="container">
+    <h3>2. Alineación horizontal (justify-content)</h3>
+    <p>
+      <strong>Descripción:</strong> Alinea los elementos a lo largo del eje principal (horizontal).
+    </p>
+    <div class="option-title">Opción: flex-start (inicio)</div>
+    <div class="flex-container" style="justify-content: flex-start;">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+    </div>
+    <div class="option-title">Opción: flex-end (final)</div>
+    <div class="flex-container" style="justify-content: flex-end;">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+    </div>
+    <div class="option-title"> center </div>
+    <div class="flex-container" style="justify-content: center;">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+    </div>
+    <div class="option-title">space-between </div>
+    <div class="flex-container" style="justify-content: space-between;">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+    </div>
+    <div class="option-title"> space-around (espacio alrededor)</div>
+    <div class="flex-container" style="justify-content: space-around;">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+    </div>
+    <div class="option-title"> space-evenly </div>
+    <div class="flex-container" style="justify-content: space-evenly;">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+    </div>
+  </div>
+  <div class="container">
+    <h3>3. Alineación vertical (align-items)</h3>
+    <p>
+      <strong>Descripción:</strong> Alinea los elementos a lo largo del eje transversal (vertical).
+    </p>
+    <div class="option-title">flex-start</div>
+    <div class="flex-container" style="align-items: flex-start; height: 150px;">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+    </div>
+    <div class="option-title">flex-end</div>
+    <div class="flex-container" style="align-items: flex-end; height: 150px;">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+    </div>
+    <div class="option-title"> center (centro)</div>
+    <div class="flex-container" style="align-items: center; height: 150px;">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+    </div>
+    <div class="option-title"> stretch (estirar)</div>
+    <div class="flex-container" style="align-items: stretch; height: 150px;">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+    </div>
+    <div class="option-title">Opción: baseline (línea base)</div>
+    <div class="flex-container" style="align-items: baseline; height: 150px;">
+      <div class="item" style="padding-top: 30px;">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item" style="padding-top: 50px;">Item 3</div>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2>4. Ajuste de elementos (flex-wrap)</h2>
+    <p>
+      <strong>Descripción:</strong> Define si los elementos deben envolverse en varias líneas si no caben en una sola.
+    </p>
+    <div class="option-title">Opción: nowrap (sin envolver)</div>
+    <div class="flex-container" style="flex-wrap: nowrap;">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+      <div class="item">Item 4</div>
+      <div class="item">Item 5</div>
+      <div class="item">Item 6</div>
+    </div>
+    <div class="option-title">Opción: wrap (envolver)</div>
+    <div class="flex-container" style="flex-wrap: wrap;">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+      <div class="item">Item 4</div>
+      <div class="item">Item 5</div>
+      <div class="item">Item 6</div>
+    </div>
+    <div class="option-title">Opción: wrap-reverse (envolver en orden inverso)</div>
+    <div class="flex-container" style="flex-wrap: wrap-reverse;">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+      <div class="item">Item 4</div>
+      <div class="item">Item 5</div>
+      <div class="item">Item 6</div>
+    </div>
+  </div>
+  <div class="container">
+    <h3>5. Tamaño flexible de los elementos (flex-grow, flex-shrink, flex-basis)</h3>
+    <p>
+      <strong>Descripción:</strong> Controla cómo los elementos crecen, se encogen y su tamaño base.
+    </p>
+    <div class="option-title">Opción: flex-grow (crecer)</div>
+    <div class="flex-container">
+      <div class="item" style="flex-grow: 1;">Item 1 (flex-grow: 1)</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+    </div>
+    <div class="option-title">Opción: flex-shrink (encoger)</div>
+    <div class="flex-container">
+      <div class="item" style="flex-shrink: 0; width: 200px;">Item 1 (flex-shrink: 0)</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+    </div>
+    <div class="option-title">Opción: flex-basis (tamaño base)</div>
+    <div class="flex-container">
+      <div class="item" style="flex-basis: 200px;">Item 1 (flex-basis: 200px)</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; 2023 Mi Página Web.Todos los derechos reservados.</p>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>TUTORIAL DE LISTAS</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../estilos/estilohtml.css'>
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <header class="navbar">
+        <h1>COLORES
+            <svg width="50" height="50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="3" y="3" width="18" height="18" rx="2" stroke="white" stroke-width="2" />
+                <line x1="3" y1="8" x2="21" y2="8" stroke="white" stroke-width="2" />
+                <line x1="3" y1="14" x2="21" y2="14" stroke="white" stroke-width="2" />
+                <line x1="8" y1="3" x2="8" y2="21" stroke="white" stroke-width="2" />
+                <line x1="16" y1="3" x2="16" y2="21" stroke="white" stroke-width="2" />
+            </svg>
+        </h1>
+        <nav>
+            <a href="indice.html" target="_self"
+                style="box-shadow: 3px 3px 3px #1e3b59 (128, 128, 128, 0.512); border-radius: 8px;">INICIO</a>
+            <a href="HTMLRESUMEN.html" target="_self"
+                style="box-shadow: 3px 3px 3px #1e3b59 (128, 128, 128, 0.512); border-radius: 8px;">RESUMEN</a>
+            <a href="colores.html" target="_self"
+                style="box-shadow: 3px 3px 3px #1e3b59 (128, 128, 128, 0.512); border-radius: 8px;">COLORES</a>
+            <a href="lenguajes.html" target="_self"
+                style="box-shadow: 3px 3px 3px #1e3b59 (128, 128, 128, 0.512); border-radius: 8px;">LENGUAJES</a>
+            <a href="atajos.html" target="_self"
+                style="box-shadow: 3px 3px 3px #1e3b59 (128, 128, 128, 0.512); border-radius: 8px;">ATAJOS DE
+                TECLADO</a>
+            <a href="flexbox.html" target="_self"
+                style="box-shadow: 3px 3px 3px #1e3b59(128, 128, 128, 0.512); border-radius: 8px;">FLEXBOX</a>
+            <a href="pseudeo.html" target="_self"
+                style="box-shadow: 3px 3px 3px #1e3b59(128, 128, 128, 0.512); border-radius: 8px;">PSEDEU</a>
+            <a href="imagenes.html" target="_self"
+                style="box-shadow: 3px 3px 3px #1e3b59(128, 128, 128, 0.512); border-radius: 8px;">IMAGENES</a>
+            <a href="tablas.html" target="_self"
+                style="box-shadow: 3px 3px 3px #1e3b59(128, 128, 128, 0.512); border-radius: 8px;">TABLAS</a>
+            <a href="mediqueries.html" target="_self"
+                style="box-shadow: 3px 3px 3px #1e3b59(128, 128, 128, 0.512); border-radius: 8px;">MEDIA QUERIES</a>
+        </nav>
+    </header>
+
+    <p>Las listas en HTML son esenciales para organizar información en tus páginas web. HTML ofrece tres tipos
+        principales: <code>&lt;ul&gt;</code> (desordenadas), <code>&lt;ol&gt;</code> (ordenadas) y
+        <code>&lt;dl&gt;</code> (de definición). Exploremos cada una con ejemplos y detalles.
+    </p>
+
+    <h2>Listas Desordenadas (<code>&lt;ul&gt;</code>)</h2>
+
+    <p>Las listas desordenadas (unordered lists) se usan para elementos sin un orden específico. Se representan con
+        viñetas.</p>
+
+    <div class="example">
+        <h3>Ejemplo básico:</h3>
+        <ul class="code">
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+        </ul>
+
+        <h3>Atributos:</h3>
+        <ul>
+            <li><span class="attribute">type</span>: Especifica el tipo de viñeta:
+                <ul>
+                    <li><span class="code">disc</span> (predeterminado): Círculo relleno</li>
+                    <li><span class="code">circle</span>: Círculo vacío</li>
+                    <li><span class="code">square</span>: Cuadrado relleno</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>Ejemplo con <span class="attribute">square</span>:</h3>
+        <ul class="code" type="square">
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+        </ul>
+        <br>
+        <h3>Ejemplo con <span class="attribute">disc</span>:</h3>
+        <ul class="code" type="disc">
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+        </ul>
+        <br>
+        <h3>Ejemplo con <span class="attribute">circle</span>:</h3>
+        <ul class="code" type="circle">
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+        </ul>
+        <br>
+
+    </div>
+
+    <h2>Listas Ordenadas (<code>&lt;ol&gt;</code>)</h2>
+
+    <p>Las listas ordenadas (ordered lists) se usan cuando el orden de los elementos es importante. Se representan con
+        números o letras secuenciales.</p>
+
+    <div class="example">
+        <h3>Ejemplo básico:</h3>
+        <ol class="code">
+            <li>Primer paso</li>
+            <li>Segundo paso</li>
+            <li>Tercer paso</li>
+        </ol>
+
+        <h3>Atributos:</h3>
+        <ul>
+            <li><span class="attribute">type</span>: Especifica el tipo de numeración:
+                <ul>
+                    <li><span class="code">1</span> (predeterminado): Números arábigos</li>
+                    <li><span class="code">a</span>: Letras minúsculas</li>
+                    <li><span class="code">A</span>: Letras mayúsculas</li>
+                    <li><span class="code">i</span>: Números romanos en minúsculas</li>
+                    <li><span class="code">I</span>: Números romanos en mayúsculas</li>
+                </ul>
+            </li>
+            <li><span class="attribute">start</span>: Especifica el número o letra de inicio.</li>
+            <li><span class="attribute">reversed</span>: Invierte el orden de la lista.</li>
+        </ul>
+
+        <h3>Ejemplo con <span class="attribute">type</span> 1 <span class="attribute">start 3</span>:</h3>
+        <ol class="code" type="1" start="3">
+            <li>Tercer paso</li>
+            <li>Cuarto paso</li>
+        </ol>
+        <br>
+        <h3>Ejemplo con <span class="attribute">type</span> a <span class="attribute">start 3</span>:</h3>
+        <ol class="code" type="a" start="3">
+            <li>Tercer paso</li>
+            <li>Cuarto paso</li>
+        </ol>
+        <br>
+        <h3>Ejemplo con <span class="attribute">type</span> A <span class="attribute">start 3</span>:</h3>
+        <ol class="code" type="A" start="3">
+            <li>Tercer paso</li>
+            <li>Cuarto paso</li>
+        </ol>
+        <br>
+        <h3>Ejemplo con <span class="attribute">type</span> i <span class="attribute">start 3</span>:</h3>
+        <ol class="code" type="i" start="3">
+            <li>Tercer paso</li>
+            <li>Cuarto paso</li>
+        </ol>
+        <br>
+        <h3>Ejemplo con <span class="attribute">type</span> I <span class="attribute">start</span>:</h3>
+        <ol class="code" type="I" start="3">
+            <li>Tercer paso</li>
+            <li>Cuarto paso</li>
+        </ol>
+        <br>
+
+        <h3>Ejemplo con <span class="attribute">reversed</span>:</h3>
+        <ol class="code" reversed="">
+            <li>Tercer paso</li>
+            <li>Segundo paso</li>
+            <li>Primer paso</li>
+        </ol>
+    </div>
+
+    <h2>Listas de Definición (<code>&lt;dl&gt;</code>)</h2>
+
+    <p>Las listas de definición (description lists) se usan para presentar términos y sus definiciones. Cada término se
+        define con <code>&lt;dt&gt;</code> (definition term) y su definición con <code>&lt;dd&gt;</code> (definition
+        description).</p>
+
+    <div class="example">
+        <h3>Ejemplo:</h3>
+        <dl class="code">
+            <dt>HTML</dt>
+            <dd>Lenguaje de marcado para la creación de páginas web.</dd>
+            <dd>Lenguaje de marcado para la creación de páginas web.</dd>
+            <dd>Lenguaje de marcado para la creación de páginas web.</dd>
+            <dt>CSS</dt>
+            <dd>Lenguaje de estilos para dar formato a las páginas web.</dd>
+            <dd>Lenguaje de estilos para dar formato a las páginas web.</dd>
+            <dd>Lenguaje de estilos para dar formato a las páginas web.</dd>
+        </dl>
+
+        <h3>No tiene atributos específicos.</h3>
+    </div>
+
+    <h2>Listas Anidadas</h2>
+
+    <p>Las listas pueden anidarse para crear estructuras más complejas.</p>
+
+    <div class="example">
+        <h3>Ejemplo:</h3>
+        <ul class="code">
+            <li>Elemento 1
+                <ul>
+                    <li>Sub elemento 1</li>
+                    <li>Sub elemento 2</li>
+                </ul>
+            </li>
+            <li>Elemento 2</li>
+        </ul>
+    </div>
+    <footer>
+        <p>&copy; 2023 Mi Página Web.Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>

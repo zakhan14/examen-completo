@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries en CSS</title>
+    <link rel='stylesheet' type='text/css' media='screen' href="../estilos/estilohtml.css">
+    <style>
+        @media screen and (max-width: 600px) {
+            body {
+                background-color: #ffebee;
+            }
+        }
+
+        @media screen and (min-width: 601px) and (max-width: 1024px) {
+            body {
+                background-color: #e3f2fd;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="navbar">
+        <h1>Guía sobre Tablas en HTML
+            <svg width="50" height="50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" y="4" width="20" height="16" rx="2" stroke="white" stroke-width="2"/>
+                <line x1="2" y1="10" x2="22" y2="10" stroke="white" stroke-width="2"/>
+                <line x1="2" y1="16" x2="22" y2="16" stroke="white" stroke-width="2"/>
+                <line x1="8" y1="4" x2="8" y2="20" stroke="white" stroke-width="2"/>
+                <line x1="16" y1="4" x2="16" y2="20" stroke="white" stroke-width="2"/>
+                <circle cx="6" cy="7" r="1.5" fill="white"/>
+                <circle cx="6" cy="13" r="1.5" fill="white"/>
+                <circle cx="6" cy="19" r="1.5" fill="white"/>
+            </svg>
+            
+        </h1>
+        <nav>
+            <a href="indice.html" target="_self"
+                style="box-shadow: 3px 3px 3px #1e3b59 (128, 128, 128, 0.512); border-radius: 8px;">INICIO</a>
+            <a href="HTMLRESUMEN.html" target="_self"
+                style="box-shadow: 3px 3px 3px #1e3b59(128, 128, 128, 0.512); border-radius: 8px;">RESUMEN</a>
+            <a href="colores.html" target="_self"
+                style="box-shadow: 3px 3px 3px #1e3b59 (128, 128, 128, 0.512); border-radius: 8px;">COLORES</a>
+            <a href="lenguajes.html" target="_self"
+                style="box-shadow: 3px 3px 3px #1e3b59 (128, 128, 128, 0.512); border-radius: 8px;">LENGUAJES</a>
+            <a href="listas.html" target="_self"
+                style="box-shadow: 3px 3px 3px #1e3b59 (128, 128, 128, 0.512); border-radius: 8px;">LISTAS</a>
+            <a href="atajos.html" target="_self"
+                style="box-shadow: 3px 3px 3px #1e3b59 (128, 128, 128, 0.512); border-radius: 8px;">ATAJOS DE
+                TECLADO</a>
+            <a href="flexbox.html" target="_self"
+                style="box-shadow: 3px 3px 3px #1e3b59(128, 128, 128, 0.512); border-radius: 8px;">FLEXBOX</a>
+            <a href="pseudeo.html" target="_self"
+                style="box-shadow: 3px 3px 3px #1e3b59(128, 128, 128, 0.512); border-radius: 8px;">PSEDEU</a>
+            <a href="imagenes.html" target="_self"
+                style="box-shadow: 3px 3px 3px #1e3b59(128, 128, 128, 0.512); border-radius: 8px;">IMAGENES</a>
+            <a href="tablas.html" target="_self"
+                style="box-shadow: 3px 3px 3px #1e3b59(128, 128, 128, 0.512); border-radius: 8px;">TABALS</a>
+        </nav>
+    </header>
+    <main>
+        <section id="introduccion" class="card">
+            <h1>Introducción a Media Queries</h1>
+            <p>Las <strong>Media Queries</strong> en CSS permiten aplicar estilos según las características del
+                dispositivo, como el tamaño de la pantalla.</p>
+        </section>
+
+        <section id="ejemplo-movil" class="card">
+            <h2>Ejemplo de Media Query para móviles</h2>
+            <div class="example">
+                <code>@media screen and (max-width: 600px) { body { background-color: #ffebee; } }</code>
+                <p>Este código cambia el color de fondo cuando la pantalla es menor a 600px.</p>
+            </div>
+        </section>
+
+        <section id="ejemplo-tablet" class="card">
+            <h2>Ejemplo de Media Query para tablets</h2>
+            <div class="example">
+                <code>@media screen and (min-width: 601px) and (max-width: 1024px) { body { background-color: #e3f2fd; } }</code>
+                <p>Este código cambia el color de fondo en pantallas entre 601px y 1024px.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 - Tutorial de Media Queries</p>
+    </footer>
+</body>
+
+</html>

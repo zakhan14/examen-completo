@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>HTML</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href="../estilos/estilohtml.css">
+    <link href='https://fonts.googleapis.com/css?family=ADLaM Display' rel='stylesheet'>
+    <script src='main.js'></script>
+
+</head>
+
+<body>
+    <div>
+        <header class="navbar">
+            <h1>TUTORIAL HTML
+                <svg width="50" height="50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="3" y="3" width="18" height="18" rx="2" stroke="white" stroke-width="2" />
+                    <line x1="3" y1="8" x2="21" y2="8" stroke="white" stroke-width="2" />
+                    <line x1="3" y1="14" x2="21" y2="14" stroke="white" stroke-width="2" />
+                    <line x1="8" y1="3" x2="8" y2="21" stroke="white" stroke-width="2" />
+                    <line x1="16" y1="3" x2="16" y2="21" stroke="white" stroke-width="2" />
+                </svg>
+            </h1>
+            <nav>
+                <a href="indice.html" target="_self"
+                    style="box-shadow: 3px 3px 3px #1e3b59 (128, 128, 128, 0.512); border-radius: 8px;">INICIO</a>
+                <a href="colores.html" target="_self"
+                    style="box-shadow: 3px 3px 3px #1e3b59 (128, 128, 128, 0.512); border-radius: 8px;">COLORES</a>
+                <a href="lenguajes.html" target="_self"
+                    style="box-shadow: 3px 3px 3px #1e3b59 (128, 128, 128, 0.512); border-radius: 8px;">LENGUAJES</a>
+                <a href="atajos.html" target="_self"
+                    style="box-shadow: 3px 3px 3px #1e3b59 (128, 128, 128, 0.512); border-radius: 8px;">ATAJOS DE
+                    TECLADO</a>
+                <a href="listas.html" target="_self"
+                    style="box-shadow: 3px 3px 3px #1e3b59(128, 128, 128, 0.512); border-radius: 8px;">LISTAS</a>
+                <a href="flexbox.html" target="_self"
+                    style="box-shadow: 3px 3px 3px #1e3b59(128, 128, 128, 0.512); border-radius: 8px;">FLEXBOX</a>
+                <a href="pseudeo.html" target="_self"
+                    style="box-shadow: 3px 3px 3px #1e3b59(128, 128, 128, 0.512); border-radius: 8px;">PSEDEU</a>
+                <a href="imagenes.html" target="_self"
+                    style="box-shadow: 3px 3px 3px #1e3b59(128, 128, 128, 0.512); border-radius: 8px;">IMAGENES</a>
+                <a href="tablas.html" target="_self"
+                    style="box-shadow: 3px 3px 3px #1e3b59(128, 128, 128, 0.512); border-radius: 8px;">TABLAS</a>
+                <a href="mediqueries.html" target="_self"
+                    style="box-shadow: 3px 3px 3px #1e3b59(128, 128, 128, 0.512); border-radius: 8px;">MEDIA QUERIES</a>
+            </nav>
+        </header>
+    </div>
+    <div style="text-align: start;margin-right: 10px;padding: 10px; font-family: ADLaM Display;">
+        En la era digital actual, la creación de contenido web se ha convertido en una habilidad esencial para
+        comunicar, compartir información y conectar con audiencias globales. Los lenguajes de marcas, como HTML, XML y
+        sus derivados, son la piedra angular de este proceso, ya que permiten estructurar y dar significado al contenido
+        que visualizamos en navegadores, aplicaciones y dispositivos. Estos lenguajes, diseñados para ser legibles tanto
+        para máquinas como para humanos, facilitan la organización de textos, imágenes, enlaces y elementos multimedia,
+        garantizando que la información se presente de manera coherente, accesible y adaptable a distintos entornos.
+    </div>
+    <div style="text-align: center;margin-right: 10px;padding: 10px; font-family: ADLaM Display; ">
+        <h2>TIPOGRAFIA</h2>
+        <p>
+            Las tipografías son un elemento fundamental en el diseño web. Aportan personalidad, legibilidad y jerarquía
+            visual a tus contenidos. HTML y CSS te ofrecen las herramientas necesarias para controlar y personalizar las
+            tipografías de tu sitio web.
+        </p>
+        <section id="tipos-tipografias" ;>
+            <h2>Tipos de tipografías</h2>
+            <p style="text-align: left">Existen diferentes clasificaciones de tipografías, pero algunas de las más
+                comunes son:</p>
+            <div class="ejemplo" style="text-align: left">
+                <div class="tipo-fuente" style="font-family: serif;">Serif: Tienen remates (pequeños adornos) en los
+                    extremos de las letras.</div>
+                <div class="tipo-fuente" style="font-family: sans-serif;">Sans-serif: No tienen remates.</div>
+                <div class="tipo-fuente" style="font-family: monospace;">Monospace: Todos los caracteres tienen el mismo
+                    ancho.</div>
+                <div class="tipo-fuente" style="font-family: cursive;">Cursive: Simulan la escritura a mano.</div>
+                <div class="tipo-fuente" style="font-family: fantasy;">Fantasy: Decorativas y poco legibles para textos
+                    largos.</div>
+            </div>
+        </section>
+        <section id="google-fonts">
+            <h2>Importación de tipografías desde Google Fonts</h2>
+            <p style="text-align: left">Google Fonts es un repositorio de fuentes gratuitas que puedes utilizar en tu
+                sitio web. Para importar
+                una fuente, sigue estos pasos:</p>
+            <ol>
+                <li>Visita <a href="https://fonts.google.com/?hl=es-419" target="_blank">Google Fonts</a>.</li>
+                <li>Busca la fuente que te guste y selecciónala.</li>
+                <li>En la parte inferior de la página, elige los estilos que necesites (normal, negrita, cursiva, etc.).
+                </li>
+                <li>Copia el enlace proporcionado en el apartado "Embed" y pégalo en la sección
+                    <code>&lt;head&gt;</code> de tu archivo HTML.
+                </li>
+                <li>Copia el código <code>&lt;link&gt;</code> que se te proporciona y pégalo dentro de la etiqueta
+                    <code>&lt;head&gt;</code> de tu archivo HTML.
+                </li>
+            </ol>
+
+            <h3>Ejemplo:</h3>
+            <div class="ejemplo">
+                <div class="tipo-fuente" style="font-family: 'Roboto', sans-serif;">Roboto (Google Fonts)</div>
+                <div class="tipo-fuente" style="font-family: 'Open Sans', sans-serif;">Open Sans (Google Fonts)</div>
+                <div class="tipo-fuente" style="font-family: 'Montserrat', sans-serif;">Montserrat (Google Fonts)</div>
+                <div class="tipo-fuente" style="font-family: 'Lato', sans-serif;">Lato (Google Fonts)</div>
+                <div class="tipo-fuente" style="font-family: 'Oswald', sans-serif;">Oswald (Google Fonts)</div>
+                <div class="tipo-fuente" style="font-family: 'Poppins', sans-serif;">Poppins (Google Fonts)</div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2023 Mi Página Web.Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+
+</html>

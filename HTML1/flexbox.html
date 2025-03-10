@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>flexbox</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href="../estilos/estilohtml.css">
+    <link href='https://fonts.googleapis.com/css?family=Aleo' rel='stylesheet'>
+    <script src='main.js'></script>
+    <style>
+        /* utilizo estos estilos para ajustar las imagenes al tamaño de la pantalla */
+
+        section {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contenedor {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .contenedor img {
+            width: 30%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 10px 10px 10px black;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <header class="navbar">
+            <h1>Curso diseño de paginas web
+                <svg width="50" height="50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="3" y="3" width="18" height="18" rx="2" stroke="white" stroke-width="2" />
+                    <line x1="3" y1="8" x2="21" y2="8" stroke="white" stroke-width="2" />
+                    <line x1="3" y1="14" x2="21" y2="14" stroke="white" stroke-width="2" />
+                    <line x1="8" y1="3" x2="8" y2="21" stroke="white" stroke-width="2" />
+                    <line x1="16" y1="3" x2="16" y2="21" stroke="white" stroke-width="2" />
+                </svg>
+            </h1>
+            <nav>
+                <a href="indice.html" target="_self"
+                    style="box-shadow: 3px 3px 3px #1e3b59 (128, 128, 128, 0.512); border-radius: 8px;">INICIO</a>
+                <a href="HTMLRESUMEN.html" target="_self"
+                    style="box-shadow: 3px 3px 3px #1e3b59(128, 128, 128, 0.512); border-radius: 8px;">RESUMEN</a>
+                <a href="colores.html" target="_self"
+                    style="box-shadow: 3px 3px 3px #1e3b59 (128, 128, 128, 0.512); border-radius: 8px;">COLORES</a>
+                <a href="lenguajes.html" target="_self"
+                    style="box-shadow: 3px 3px 3px #1e3b59 (128, 128, 128, 0.512); border-radius: 8px;">LENGUAJES</a>
+                <a href="atajos.html" target="_self"
+                    style="box-shadow: 3px 3px 3px #1e3b59 (128, 128, 128, 0.512); border-radius: 8px;">ATAJOS DE
+                    TECLADO</a>
+                <a href="listas.html" target="_self"
+                    style="box-shadow: 3px 3px 3px #1e3b59(128, 128, 128, 0.512); border-radius: 8px;">LISTAS</a>
+                <a href="pseudeo.html" target="_self"
+                    style="box-shadow: 3px 3px 3px #1e3b59(128, 128, 128, 0.512); border-radius: 8px;">PSEDEU</a>
+                <a href="imagenes.html" target="_self"
+                    style="box-shadow: 3px 3px 3px #1e3b59(128, 128, 128, 0.512); border-radius: 8px;">IMAGENES</a>
+                <a href="tablas.html" target="_self"
+                    style="box-shadow: 3px 3px 3px #1e3b59(128, 128, 128, 0.512); border-radius: 8px;">TABLAS</a>
+                <a href="mediqueries.html" target="_self"
+                    style="box-shadow: 3px 3px 3px #1e3b59(128, 128, 128, 0.512); border-radius: 8px;">MEDIA QUERIES</a>
+            </nav>
+        </header>
+    </div>
+    <br>
+    <div style="margin-left:7px ;margin-right: 7px;">
+
+        Flexbox (Flexible Box Layout) es un modelo de diseño en CSS que permite distribuir y alinear elementos de manera
+        eficiente en un contenedor, incluso cuando sus tamaños son dinámicos o desconocidos. Se utiliza principalmente
+        para crear diseños más flexibles y responsivos sin necesidad de usar float o position. Si desea ver cada uno de
+        los ejmplos de de ello pulsa <a href="FLEXBOX2.HTML"
+            style="background-color: #a2b9d2; box-shadow: 3px 3px 3px black;border-radius: 10px;">AQUÍ</a> <br>
+        <br>
+    </div>
+    <div style="margin-left:10px ;margin-right: 5px;">
+
+    </div>
+
+    <br>
+    <div class="contenedor">
+        <img src="https://mastercodepro.com/wp-content/uploads/2025/01/css-flex-box.jpg" alt="Imagen 1;" ;>
+        <img src="https://miro.medium.com/v2/resize:fit:1400/1*YgU3n8NTuiAWWGeohO2g-w.png" alt="Imagen 2">
+        <img src="../imagenes/foto06.jpg.webp" alt="Imagen 3;">
+
+    </div>
+    <footer>
+        <p>&copy; 2023 Mi Página Web.Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+
+</html>

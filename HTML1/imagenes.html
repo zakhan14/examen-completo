@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía para Agregar Imágenes en HTML</title>
+    <link rel='stylesheet' type='text/css' media='screen' href="../estilos/estilohtml.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .image-container img {
+            width: 200px;
+            /* Ajusta el tamaño */
+            height: auto;
+            border-radius: 10px;
+            /* Bordes redondeados */
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.1);
+            /* Efecto de zoom */
+        }
+
+        h2 {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <header class="navbar">
+            <h1>Cómo Agregar y Editar Imágenes en HTML
+                <svg width="50" height="50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="3" y="3" width="18" height="18" rx="2" stroke="white" stroke-width="2" />
+                    <line x1="3" y1="8" x2="21" y2="8" stroke="white" stroke-width="2" />
+                    <line x1="3" y1="14" x2="21" y2="14" stroke="white" stroke-width="2" />
+                    <line x1="8" y1="3" x2="8" y2="21" stroke="white" stroke-width="2" />
+                    <line x1="16" y1="3" x2="16" y2="21" stroke="white" stroke-width="2" />
+                </svg>
+            </h1>
+            <nav>
+                <a href="indice.html" target="_self"
+                    style="box-shadow: 3px 3px 3px #1e3b59 (128, 128, 128, 0.512); border-radius: 8px;">INICIO</a>
+                <a href="HTMLRESUMEN.html" target="_self"
+                    style="box-shadow: 3px 3px 3px #1e3b59(128, 128, 128, 0.512); border-radius: 8px;">RESUMEN</a>
+                <a href="colores.html" target="_self"
+                    style="box-shadow: 3px 3px 3px #1e3b59 (128, 128, 128, 0.512); border-radius: 8px;">COLORES</a>
+                <a href="lenguajes.html" target="_self"
+                    style="box-shadow: 3px 3px 3px #1e3b59 (128, 128, 128, 0.512); border-radius: 8px;">LENGUAJES</a>
+                <a href="atajos.html" target="_self"
+                    style="box-shadow: 3px 3px 3px #1e3b59 (128, 128, 128, 0.512); border-radius: 8px;">ATAJOS DE
+                    TECLADO</a>
+                <a href="listas.html" target="_self"
+                    style="box-shadow: 3px 3px 3px #1e3b59(128, 128, 128, 0.512); border-radius: 8px;">LISTAS</a>
+                <a href="flexbox.html" target="_self"
+                    style="box-shadow: 3px 3px 3px #1e3b59(128, 128, 128, 0.512); border-radius: 8px;">FLEXBOX</a>
+                <a href="pseudeo.html" target="_self"
+                    style="box-shadow: 3px 3px 3px #1e3b59(128, 128, 128, 0.512); border-radius: 8px;">PSEDEU</a>
+                <a href="tablas.html" target="_self"
+                    style="box-shadow: 3px 3px 3px #1e3b59(128, 128, 128, 0.512); border-radius: 8px;">TABLAS</a>
+                <a href="mediqueries.html" target="_self"
+                    style="box-shadow: 3px 3px 3px #1e3b59(128, 128, 128, 0.512); border-radius: 8px;">MEDIA QUERIES</a>
+            </nav>
+        </header>
+    </div>
+    <br>
+
+
+    <h2>Importancia de las Imágenes en una Web</h2>
+    <p>Las imágenes son fundamentales en una web, ya que mejoran la estética, captan la atención del usuario y refuerzan
+        el contenido visualmente.</p>
+
+    <h2>1. Agregar una Imagen</h2>
+    <p>Se usa la etiqueta <code>&lt;img&gt;</code> con el atributo <code>src</code>:</p>
+    <img src="../imagenes/soccer.jpg.jpeg" alt="Ejemplo de imagen" width="300">
+
+    <h2>2. Editar una Imagen con CSS</h2>
+    <p>Ejemplo de ajuste de tamaño, bordes redondeados y efecto hover:</p>
+    <div class="image-container">
+        <img src="https://th.bing.com/th/id/OIG1.EZ.xhmqiffvCbZ9.zDGd?w=1024&h=1024&rs=1&pid=ImgDetMain" alt="Imagen 1">
+        <img src="https://th.bing.com/th/id/OIG2.jWtrpu3bngdp7_03Iitl?w=1024&h=1024&rs=1&pid=ImgDetMain" alt="Imagen 2">
+    </div>
+
+    <h2>3. Mover una Imagen con CSS</h2>
+    <p>Podemos usar <code>position</code> para mover imágenes:</p>
+    <div style="position: relative; height: 150px; border: 1px solid #ccc;">
+        <img src="../imagenes/foto01.jpg" width="200px" alt="Imagen Movible"
+            style="position: absolute; left: 50px; top: 30px;width: 100;">
+    </div>
+
+    <h2>4. Formatos de Imagen: WebP, SVG y JPG</h2>
+    <p>Los diferentes formatos de imagen tienen usos específicos:</p>
+    <ul>
+        <li><b>JPG:</b> Bueno para fotografías con alta calidad y compresión eficiente.</li>
+        <li><b>WebP:</b> Formato moderno con mejor compresión y calidad que JPG, ideal para optimizar el rendimiento
+            web.</li>
+        <li><b>SVG:</b> Imágenes vectoriales escalables sin pérdida de calidad, perfectas para iconos y gráficos.</li>
+    </ul>
+
+    <h2>5. Ejemplo de Imágenes en Diferentes Formatos</h2>
+    <p>Ejemplo de una imagen en formato WebP:</p>
+    <img src="../imagenes/img.webp" alt="Imagen WebP" width="500">
+
+    <p>Ejemplo de una imagen en formato SVG:</p>
+    <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <!-- Tallo -->
+        <line x1="100" y1="50" x2="100" y2="180" stroke="green" stroke-width="5" />
+
+        <!-- Hojas -->
+        <ellipse cx="85" cy="100" rx="20" ry="10" fill="green" />
+        <ellipse cx="115" cy="120" rx="20" ry="10" fill="green" />
+
+        <!-- Pétalos -->
+        <circle cx="100" cy="50" r="30" fill="red" />
+        <circle cx="80" cy="40" r="20" fill="red" />
+        <circle cx="120" cy="40" r="20" fill="red" />
+        <circle cx="90" cy="25" r="15" fill="red" />
+        <circle cx="110" cy="25" r="15" fill="red" />
+    </svg>
+    <footer>
+        <p>&copy; 2023 Mi Página Web.Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
