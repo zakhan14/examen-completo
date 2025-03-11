@@ -44,7 +44,6 @@
             const form = document.querySelector(".formulario");
         
             form.addEventListener("submit", function (event) {
-                event.preventDefault(); // Evita que se envíe el formulario directamente
         
                 const nombre = document.getElementById("nombre").value.trim();
                 const email = document.getElementById("email").value.trim();
@@ -55,18 +54,19 @@
                     return;
                 }
         
-                if (!validarEmail(email)) {
+                else if (!validarEmail(email)) {
                     alert("Por favor, introduce un correo electrónico válido.");
                     return;
                 }
         
-                if (password.length < 6) {
+                else if (password.length < 6) {
                     alert("La contraseña debe tener al menos 6 caracteres.");
                     return;
                 }
         
-                alert("Registro exitoso");
+                else {alert("Registro exitoso");
                 form.submit(); // Envía el formulario si todo es válido
+            }
             });
         
             function validarEmail(email) {
