@@ -131,3 +131,190 @@ footer {
   padding: 10px 0;
   margin-top: 20px;
 }
+
+/*modo oscuro*/
+/* Modo Claro (Por Defecto) */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f8ff;
+  color: #333;
+  text-align: center;
+}
+
+nav {
+  background-color: #333;
+  box-shadow: 3px 3px 3px black;
+  border-radius: 10px;
+}
+
+.navbar {
+  background-color: #0e569e;
+  color: white;
+  padding: 20px;
+  font-size: 24px;
+}
+
+.navbar nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 18px;
+}
+
+.navbar nav a:hover {
+  text-decoration: underline;
+}
+
+.card {
+  background: rgb(106, 104, 104);
+  padding: 20px;
+  margin: 20px auto;
+  width: 80%;
+  max-width: 500px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background: #e6f2ff;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input,
+textarea {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.contenedor img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+h3,
+p {
+  margin: 0;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td {
+  padding: 10px;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+/* ---- MODO OSCURO ---- */
+.dark-mode {
+  background-color: #666666;
+  color: #f0f0f0;
+}
+
+.dark-mode nav {
+  background-color: #222;
+}
+
+.dark-mode .navbar {
+  background-color: #032045;
+}
+
+.dark-mode .navbar nav a {
+  color: white;
+}
+
+.dark-mode .card {
+  background: #525252;
+  box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode li {
+  background: #525151;
+  color: #ddd;
+}
+
+.dark-mode input,
+.dark-mode textarea {
+  background: #404040;
+  color: white;
+  border: 1px solid #555;
+}
+
+.dark-mode .button {
+  background-color: #007bff;
+}
+
+.dark-mode .button:hover {
+  background-color: #0056b3;
+}
+
+.dark-mode section {
+  background: #525252;
+  border: 1px solid #555;
+}
+
+.dark-mode td {
+  color: white;
+}
+
+.dark-mode footer {
+  background-color: #353535;
+}
